@@ -14,7 +14,7 @@ app.get('/ping',(req,res)=>{
 
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'https://deploy-mern-app-5h47.vercel.app',
+    origin: 'https://deploy-mern-app-ui.vercel.app',
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization'
 }));
