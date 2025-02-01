@@ -13,11 +13,7 @@ app.get('/ping',(req,res)=>{
 });
 
 app.use(bodyParser.json());
-app.use(cors({
-    origin: 'https://deploy-mern-app-ui-beta.vercel.app',
-    methods: 'GET,POST,PUT,DELETE',
-    allowedHeaders: 'Content-Type,Authorization'
-}));
+app.use(cors());
 app.use('/auth', AuthRouter);
 app.use('/products', ProductRouter);
 
